@@ -1,0 +1,14 @@
+# Dependencies / OS
+.DS_Store
+Thumbs.db
+
+# Hugo
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Editor
+*.swp
+*~
+.idea/
+.vscode/

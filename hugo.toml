@@ -1,0 +1,50 @@
+baseURL = "https://fduthilleul.github.io/drdelplace.be/"
+
+disableKinds = ["section", "taxonomy", "term", "RSS"]
+
+defaultContentLanguage = "fr"
+theme = "hugo-scroll"
+title = "Dr Delplace | Dermatologue"
+enableEmoji = true
+
+[params]
+    favicon = "images/favicon.png"
+    images = ["images/cover.png"]
+    title_guard = true
+    title = "Dr Delplace | Dermatologue"
+    description = "Cabinet de dermatologie du Dr Daphné Delplace à Ath — consultations sur rendez-vous."
+    language_menu = false
+    show_current_lang = false
+    copyright = "© Dr Delplace. Tous droits réservés."
+    hidedesignbyline = true
+    invertSectionColors = false
+    image_options = "webp q90 lanczos photo"
+    combine_page_and_site_title = false
+
+    # Booking (Progenda)
+    bookingURL = "https://progenda.be/calendars/docteur-delplace-daphne-dermatologue-ath-1cf29121-b19c-4393-abc8-a50a9ecb8f0e/availabilities?locale=fr"
+
+    [params.footer]
+        showContactIcons = true
+        showFooterLinks = false
+
+    [params.meta]
+        keywords = "dermatologue, Ath, dermatologie, Dr Delplace, Daphné Delplace, peau, cabinet médical"
+
+    [[params.contacts]]
+        label = "Téléphone"
+        value = "068 54 24 68"
+        url = "tel:+3268542468"
+        icon = "fa fa-phone"
+
+    [[params.contacts]]
+        label = "Adresse"
+        value = "Grand'Rue des Bouchers 3, 7800 Ath"
+        url = "https://maps.google.com/maps?q=dr%20daphn%C3%A9%20delplace%20ath"
+        icon = "fa fa-location-dot"
+
+    [[params.contacts]]
+        label = "RDV en ligne"
+        value = "Progenda"
+        url = "https://progenda.be/calendars/docteur-delplace-daphne-dermatologue-ath-1cf29121-b19c-4393-abc8-a50a9ecb8f0e/availabilities?locale=fr"
+        icon = "fa fa-calendar-check"
