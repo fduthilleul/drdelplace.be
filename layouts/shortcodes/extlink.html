@@ -1,0 +1,1 @@
+{{ with .Get "href" }}<a href="{{ . | safeURL }}"{{ if hasPrefix . "http" }} target="_blank" rel="noopener"{{ end }}>{{ end }}{{ with .Get "icon" }}<i class="{{ . }}"></i> {{ end }}{{ with .Get "text" }}{{ . }}</a>{{ end }}

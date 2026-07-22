@@ -7,6 +7,9 @@ Thumbs.db
 /resources/_gen/
 .hugo_build.lock
 
+# Scratch
+tmp-*.css
+
 # Editor
 *.swp
 *~
