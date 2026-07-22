@@ -1,9 +1,8 @@
 ---
-title: "Le cabinet"
-header_menu_title: "Cabinet"
+title: "Le cabinet médical"
 navigation_menu_title: "Le cabinet"
 weight: 3
-header_menu: true
+header_menu: false
 ---
 
 Le cabinet est situé au **n° 3 de la Grand’Rue des Bouchers** dans le centre-ville d’Ath, à proximité de la Grand Place et de l’église Saint-Martin.

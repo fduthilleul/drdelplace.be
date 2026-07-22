@@ -1,9 +1,8 @@
 ---
 title: "Prendre un RDV"
-header_menu_title: "RDV"
-navigation_menu_title: "Prendre un RDV"
+navigation_menu_title: "La consultation"
 weight: 4
-header_menu: true
+header_menu: false
 ---
 
 ### Par Internet

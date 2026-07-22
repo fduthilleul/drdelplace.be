@@ -1,9 +1,8 @@
 ---
 title: "Contact"
-header_menu_title: "Contact"
 navigation_menu_title: "Contact"
 weight: 7
-header_menu: true
+header_menu: false
 ---
 
 {{< contact_list >}}

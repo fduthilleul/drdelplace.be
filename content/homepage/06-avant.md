@@ -1,9 +1,8 @@
 ---
 title: "Avant de venir"
-header_menu_title: "Avant de venir"
 navigation_menu_title: "Avant de venir"
 weight: 6
-header_menu: true
+header_menu: false
 ---
 
 Voici ce qu’il faut apporter pour la consultation :

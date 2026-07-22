@@ -1,9 +1,8 @@
 ---
 title: "Infos pratiques"
-header_menu_title: "Infos"
 navigation_menu_title: "Infos pratiques"
 weight: 5
-header_menu: true
+header_menu: false
 ---
 
 ### Conditions d’annulation

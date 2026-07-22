@@ -1,9 +1,8 @@
 ---
-title: "À propos"
-header_menu_title: "À propos"
+title: "À propos du Dr Delplace"
 navigation_menu_title: "À propos"
 weight: 2
-header_menu: true
+header_menu: false
 ---
 
 Diplômée de l’Université Libre de Bruxelles (ULB) en 2007, le Docteur Daphné Delplace s’est spécialisée en dermatologie au CHU Saint-Pierre (Bruxelles) ainsi qu’au sein de l’Hôpital Universitaire des Enfants Reine Fabiola (HUDERF) où elle a développé ses compétences en dermatologie pédiatrique.

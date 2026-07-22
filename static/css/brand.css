@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500&family=Raleway:wght@200;300;400&family=Raleway+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500&family=Raleway:wght@200;300;400&family=Raleway+Dots&family=Roboto:wght@300;400;500&display=swap");
 
-/* Brand overrides on top of Hugo Scroll */
+/* Brand overrides — match Elementor / drdelplace.be */
 
 #site-head,
 #site-head.withCenteredImage {
@@ -9,34 +9,109 @@
   color: #000;
 }
 
-#site-head .blog-title {
-  font-family: "Raleway Dots", "Raleway", sans-serif;
-  font-weight: 200;
-  letter-spacing: -2px;
-  color: #000;
-  text-shadow: none;
+/* Hide favicon logo on cover (not on original) */
+#site-head #blog-logo {
+  display: none;
 }
 
+/* Centered cover menu */
+.hero-nav {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.75rem 2.5rem;
+  width: max-content;
+  max-width: calc(100% - 2rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-nav a {
+  color: #6b6b6b;
+  text-decoration: none;
+  opacity: 0.95;
+}
+
+.hero-nav a:hover {
+  color: #111;
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .hero-nav {
+    top: 1.25rem;
+    gap: 1rem 1.5rem;
+    font-size: 1.35rem;
+  }
+}
+
+/* Stack: eyebrow → title → CTA */
+#site-head #site-head-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#site-head .title-and-description-guard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent !important;
+  padding: 0;
+  margin: 0 1rem 1.5rem;
+}
+
+/* Eyebrow first (was .blog-description) */
 #site-head .blog-description {
+  order: 1;
   font-family: "Lora", serif;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: clamp(1.6rem, 3vw, 3rem);
   letter-spacing: 2px;
   color: #7a7a7a;
   text-transform: none;
   text-shadow: none;
+  margin: 0 0 0.6rem;
+  line-height: 1.2;
 }
 
+/* Main dotted title — Raleway Dots only ships as regular weight */
+#site-head .blog-title {
+  order: 2;
+  font-family: "Raleway Dots", sans-serif;
+  font-weight: 400;
+  font-size: clamp(3.2rem, 9vw, 8rem);
+  letter-spacing: -2px;
+  color: #111;
+  text-shadow: none;
+  margin: 0;
+  line-height: 1.05;
+}
+
+/* Single green pill CTA — rem base is 62.5% (1rem ≈ 10px) */
 #site-head a.btn {
+  order: 3;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  letter-spacing: 0.7px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
   border-radius: 50px;
-  border: 3px solid #61ce70;
+  border: 2px solid #61ce70;
   background-color: #61ce70;
   color: #fff;
-  padding: 14px 36px;
+  padding: 1.1rem 2.6rem;
   text-transform: uppercase;
+  margin-top: 1.75rem;
 }
 
 #site-head a.btn:hover {
@@ -45,34 +120,119 @@
   border-color: #61ce70;
 }
 
-.post .post-title {
+/* Hide external-link icon on the CTA (original has an arrow we keep in the label) */
+#site-head a.btn .fa-external-link {
+  display: none;
+}
+
+/* Down-arrow pinned to bottom of cover (out of the title/CTA stack) */
+#site-head #header-arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.25rem;
+  width: 100%;
+  margin: 0;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: #a4c3b2;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+/* ===== Sections: sage title bar + white body (Elementor spirit) ===== */
+
+.post-holder {
+  background-color: #ffffff !important;
+  color: #7a7a7a !important;
+  height: auto !important;
+}
+
+.post-holder.dark {
+  background-color: #ffffff !important;
+  color: #7a7a7a !important;
+}
+
+.post-after {
+  display: none !important;
+}
+
+.post {
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.post-header {
+  background-color: #a4c3b2;
+  width: 100%;
+  padding: 3.5rem 0;
+  margin: 0;
+}
+
+.post-header-inner,
+.post-content {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.post .post-title,
+.post-header .post-title {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  color: inherit;
+  font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+
+.post-content {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #7a7a7a;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.post-content h3,
+.post-content h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #54595f;
 }
 
 .post a {
   color: #23a455;
 }
 
-.post-template .post:nth-child(odd) a {
-  color: #ffffff;
+.post-holder.dark a {
+  color: #23a455;
   text-decoration: underline;
 }
 
-/* Pill CTAs in content (extlink looks like a button when classed) */
+.post-holder.dark a.btn-rdv {
+  text-decoration: none;
+}
+
 .btn-rdv,
 a.btn-rdv {
   display: inline-block;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.6rem;
   letter-spacing: 0.7px;
+  line-height: 1.2;
   background-color: #61ce70;
   color: #fff !important;
-  border: 3px solid #61ce70;
+  border: 2px solid #61ce70;
   border-radius: 50px;
-  padding: 14px 36px;
+  padding: 1.2rem 2.8rem;
   text-decoration: none !important;
   margin: 0.75rem 0 1.25rem;
 }
@@ -83,50 +243,15 @@ a.btn-rdv:hover {
   color: #61ce70 !important;
 }
 
-/* Icon row (Progenda / phone / contact) */
-.brand-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin: 1.5rem 0 2rem;
-  text-align: center;
-}
-
-.brand-icons figure {
-  margin: 0;
-  max-width: 140px;
-}
-
-.brand-icons img {
-  width: 96px;
-  height: auto;
-  margin: 0 auto 0.5rem;
-  display: block;
-}
-
-.brand-icons figcaption {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
-  color: inherit;
-}
-
-/* Alerts like Elementor info boxes */
 .alert {
   background-color: #eaf4f4;
   border-left: 17px solid #a4c3b2;
   padding: 1rem 1.25rem;
   margin: 1rem 0;
   color: #706969;
+  font-family: "Roboto", sans-serif;
 }
 
-.post-template .post:nth-child(even) .alert {
-  background-color: rgba(255, 255, 255, 0.25);
-  border-left-color: #ffffff;
-  color: #fff;
-}
-
-/* Map */
 .map-embed {
   margin-top: 1.5rem;
   border: 0;
@@ -138,9 +263,14 @@ a.btn-rdv:hover {
 }
 
 body {
-  font-family: "Poppins", "Raleway", sans-serif;
+  font-family: "Roboto", "Poppins", sans-serif;
 }
 
 #site-footer {
   font-family: "Poppins", sans-serif;
+}
+
+.fixed-nav {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
