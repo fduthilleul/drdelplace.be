@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500&family=Raleway:wght@200;300;400&family=Raleway+Dots&display=swap");
+
+/* Brand overrides on top of Hugo Scroll */
+
+#site-head,
+#site-head.withCenteredImage {
+  background-color: #eaebed !important;
+  background-image: none !important;
+  color: #000;
+}
+
+#site-head .blog-title {
+  font-family: "Raleway Dots", "Raleway", sans-serif;
+  font-weight: 200;
+  letter-spacing: -2px;
+  color: #000;
+  text-shadow: none;
+}
+
+#site-head .blog-description {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: #7a7a7a;
+  text-transform: none;
+  text-shadow: none;
+}
+
+#site-head a.btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  border-radius: 50px;
+  border: 3px solid #61ce70;
+  background-color: #61ce70;
+  color: #fff;
+  padding: 14px 36px;
+  text-transform: uppercase;
+}
+
+#site-head a.btn:hover {
+  background-color: rgba(97, 206, 112, 0.05);
+  color: #61ce70;
+  border-color: #61ce70;
+}
+
+.post .post-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: inherit;
+}
+
+.post a {
+  color: #23a455;
+}
+
+.post-template .post:nth-child(odd) a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Pill CTAs in content (extlink looks like a button when classed) */
+.btn-rdv,
+a.btn-rdv {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.7px;
+  background-color: #61ce70;
+  color: #fff !important;
+  border: 3px solid #61ce70;
+  border-radius: 50px;
+  padding: 14px 36px;
+  text-decoration: none !important;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.btn-rdv:hover,
+a.btn-rdv:hover {
+  background-color: #fff;
+  color: #61ce70 !important;
+}
+
+/* Icon row (Progenda / phone / contact) */
+.brand-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+}
+
+.brand-icons figure {
+  margin: 0;
+  max-width: 140px;
+}
+
+.brand-icons img {
+  width: 96px;
+  height: auto;
+  margin: 0 auto 0.5rem;
+  display: block;
+}
+
+.brand-icons figcaption {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: inherit;
+}
+
+/* Alerts like Elementor info boxes */
+.alert {
+  background-color: #eaf4f4;
+  border-left: 17px solid #a4c3b2;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  color: #706969;
+}
+
+.post-template .post:nth-child(even) .alert {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-left-color: #ffffff;
+  color: #fff;
+}
+
+/* Map */
+.map-embed {
+  margin-top: 1.5rem;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 720px;
+  height: 320px;
+  filter: grayscale(0.15);
+}
+
+body {
+  font-family: "Poppins", "Raleway", sans-serif;
+}
+
+#site-footer {
+  font-family: "Poppins", sans-serif;
+}

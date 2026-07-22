@@ -21,6 +21,9 @@ enableEmoji = true
     image_options = "webp q90 lanczos photo"
     combine_page_and_site_title = false
 
+[markup.goldmark.renderer]
+    unsafe = true
+
     # Booking (Progenda)
     bookingURL = "https://progenda.be/calendars/docteur-delplace-daphne-dermatologue-ath-1cf29121-b19c-4393-abc8-a50a9ecb8f0e/availabilities?locale=fr"
 

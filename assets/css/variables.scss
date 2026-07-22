@@ -1,0 +1,33 @@
+:root {
+
+    /* === Cover / Landing area — match drdelplace.be (Elementor) === */
+    --cover-text-color: #000000;
+    --highlight: #61CE70;
+    --highlight-contrast: #ffffff;
+    --highlight-inverse: #ffffff;
+    --highlight-inverse-contrast: #61CE70;
+
+    --cover-title-and-description-guard-bg-color: rgba(234, 235, 237, 0.85);
+    --cover-title-text-shadow: none;
+
+    /* sticky nav */
+    --sticky-menu-text-color: #A4C3B2;
+
+    /* Alternating sections: light mint / sage green */
+    --section-light-text-color: #706969;
+    --section-light-bg-color: #EAF4F4;
+
+    --section-dark-text-color: #ffffff;
+    --section-dark-bg-color: #A4C3B2;
+
+    --section-uni-quote: #54595F;
+    --section-uni-code-bg-color: #EAEBED;
+
+    --single-page-text-color: var(--section-light-text-color);
+    --single-page-bg-color: #ffffff;
+
+    --footer-color-background: #54595F;
+    --footer-color: #EAF4F4;
+
+    --ul-li-icon: fa-check;
+}
