@@ -114,11 +114,6 @@
             {{ if .Site.Params.title_guard }}</div>{{ end }}
 
             <a class="btn site-menu" href="https://progenda.be/calendars/docteur-delplace-daphne-dermatologue-ath-1cf29121-b19c-4393-abc8-a50a9ecb8f0e/availabilities?locale=fr" target="_blank" rel="noopener noreferrer">Prendre RDV →</a>
-
-            {{ with (index $content 0) }}
-                {{ $first_title := .Title }}{{ with .Params.navigation_menu_title }}{{ $first_title = . }}{{ end }}
-                <a id='header-arrow' href="#{{- anchorize $first_title -}}" aria-label="Go to first section"><i class="fa fa-angle-down"></i></a>
-            {{ end }}
         </div>
     </div>
 </header>

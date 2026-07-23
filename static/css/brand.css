@@ -163,10 +163,6 @@
   #site-head #site-head-content {
     padding-top: 5.5rem;
   }
-
-  #site-head #header-arrow {
-    display: none;
-  }
 }
 
 /* Stack: eyebrow → title → CTA */
@@ -255,20 +251,7 @@ a.btn-rdv:hover {
   display: none;
 }
 
-/* Down-arrow pinned to bottom of cover (out of the title/CTA stack) */
-#site-head #header-arrow {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1.25rem;
-  width: 100%;
-  margin: 0;
-  font-size: 3.5rem;
-  line-height: 1;
-  color: #a4c3b2;
-  opacity: 0.7;
-  z-index: 2;
-}
+/* Down-arrow removed — nav menu is enough */
 
 /* ===== Sections: sage title bar + white body (Elementor spirit) ===== */
 
