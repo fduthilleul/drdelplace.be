@@ -1,1 +1,1 @@
-<a class="btn-rdv" href="{{ .Get "href" }}">{{ .Inner | default (.Get "text") }}</a>
+<a class="btn-rdv" href="{{ .Get "href" }}"{{ if hasPrefix (.Get "href") "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Inner | default (.Get "text") }}</a>
