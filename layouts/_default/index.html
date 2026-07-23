@@ -92,11 +92,17 @@
 	{{ end }}
 
         <nav class="hero-nav" aria-label="Navigation principale">
-            <a href="#site-head">Accueil</a>
-            <a href="#à-propos">À propos</a>
-            <a href="#le-cabinet">Le cabinet</a>
-            <a href="#la-consultation">La consultation</a>
-            <a href="#contact">Contact</a>
+            <button type="button" class="hero-nav-toggle" aria-expanded="false" aria-controls="hero-nav-menu">
+                <span class="hero-nav-toggle-bars" aria-hidden="true"></span>
+                <span class="visually-hidden">Menu</span>
+            </button>
+            <div id="hero-nav-menu" class="hero-nav-links">
+                <a href="#site-head">Accueil</a>
+                <a href="#à-propos">À propos</a>
+                <a href="#le-cabinet">Le cabinet</a>
+                <a href="#la-consultation">La consultation</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
 
         <div id="site-head-content" class="inner">
